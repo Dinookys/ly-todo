@@ -1018,3 +1018,13 @@ textarea::placeholder{
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
+
+button:has(> i.bi):hover {
+  animation: pulse .5s ease-in-out 2;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(.90);
+  }
+}

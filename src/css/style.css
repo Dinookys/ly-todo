@@ -99,7 +99,6 @@ main.main--container {
     }
 }
 
-
 .main--content {
     @apply gap-5 mt-5 overflow-y-auto;
     display: grid;
@@ -253,4 +252,15 @@ textarea {
 
 ::-webkit-scrollbar-thumb {
     @apply bg-blue-800;
+}
+
+button:has(> i.bi):hover {
+    animation: pulse .5s ease-in-out 2;
+}
+
+@keyframes pulse {
+
+    50% {
+        transform: scale(.90);
+    }
 }
