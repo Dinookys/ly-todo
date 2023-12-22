@@ -35,8 +35,8 @@ header.header--container {
         @apply flex justify-end gap-2.5 px-2.5 dark:text-white;
     }
 
-    .header--add {
-        @apply rounded-full;
+    .header--trash-list {
+        @apply text-red-500;
     }
 
     .header--toggle-aside {
@@ -154,6 +154,7 @@ main.main--container {
     transform: rotateY(180deg);
 }
 
+.header--edit-list,
 .main--article .toggle {
     @apply text-blue-500;
 }

@@ -634,8 +634,9 @@ header.header--container {
       color: rgb(255 255 255 / var(--tw-text-opacity));
     }
   }
-  .header--add{
-    border-radius: 9999px;
+  .header--trash-list{
+    --tw-text-opacity: 1;
+    color: rgb(239 68 68 / var(--tw-text-opacity));
   }
   .header--toggle-aside{
     margin-left: 0.5rem;
@@ -851,6 +852,7 @@ main.main--container {
   transform: rotateY(180deg);
 }
 
+.header--edit-list,
 .main--article .toggle{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
