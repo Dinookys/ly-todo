@@ -9,183 +9,186 @@
 </head>
 
 <body>
-    <header class="header--container">
-        <h1>Todo List</h1>
-        <div class="header--actions">
-            <h3>LIST TODO: <b>ITEM-10</b></h3>
-            <button class="header--edit-list">
-                <i class="bi bi-pen"></i>
+    
+    <div id="app" >
+        <header class="header--container">
+            <h1>Todo List</h1>
+            <div class="header--actions">
+                <h3 class="header--list-name" ><b>ITEM-10</b></h3>
+                <button class="header--edit-list">
+                    <i class="bi bi-pen"></i>
+                </button>
+                <button class="header--trash-list">
+                    <span class="icon"><i class="bi bi-trash"></i></span>
+                </button>
+                <button class="header--toggle-aside" data-toggle-sidebar>
+                    <span class="icon"><i class="bi bi-list"></i></span>
+                </button>
+            </div>
+        </header>
+        <aside class="aside--container">
+    
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <span class="icon"><i class="bi bi-search"></i></span>
+            </div>
+    
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
+                                    class="bi bi-0-circle"></i></span><span>item-01</span></a></li>
+                    <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
+                                    class="bi bi-0-circle"></i></span><span>item-02</span></a></li>
+                    <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
+                                    class="bi bi-0-circle"></i></span><span>item-03</span></a></li>
+                    <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
+                                    class="bi bi-0-circle"></i></span><span>item-04</span></a></li>
+                    <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
+                                    class="bi bi-0-circle"></i></span><span>item-05</span></a></li>
+                    <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
+                                    class="bi bi-0-circle"></i></span><span>item-06</span></a></li>
+                    <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
+                                    class="bi bi-0-circle"></i></span><span>item-07</span></a></li>
+                    <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
+                                    class="bi bi-0-circle"></i></span><span>item-08</span></a></li>
+                    <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
+                                    class="bi bi-0-circle"></i></span><span>item-09</span></a></li>
+                    <li class="nav-list--item active">
+                        <a class="nav-list--item_link" href="#">
+                            <span class="icon"><i class="bi bi-0-circle"></i></span><span>item-10</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <button class="aside--add">
+                <span class="icon"><i class="bi bi-plus-circle"></i></span>&nbsp;<span>Add another list</span>
             </button>
-            <button class="header--trash-list">
-                <span class="icon"><i class="bi bi-trash"></i></span>
-            </button>
-            <button class="header--toggle-aside" data-toggle-sidebar>
-                <span class="icon"><i class="bi bi-list"></i></span>
-            </button>
-        </div>
-    </header>
-    <aside class="aside--container">
-
-        <div class="search">
-            <input type="text" placeholder="Search">
-            <span class="icon"><i class="bi bi-search"></i></span>
-        </div>
-
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
-                                class="bi bi-0-circle"></i></span><span>item-01</span></a></li>
-                <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
-                                class="bi bi-0-circle"></i></span><span>item-02</span></a></li>
-                <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
-                                class="bi bi-0-circle"></i></span><span>item-03</span></a></li>
-                <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
-                                class="bi bi-0-circle"></i></span><span>item-04</span></a></li>
-                <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
-                                class="bi bi-0-circle"></i></span><span>item-05</span></a></li>
-                <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
-                                class="bi bi-0-circle"></i></span><span>item-06</span></a></li>
-                <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
-                                class="bi bi-0-circle"></i></span><span>item-07</span></a></li>
-                <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
-                                class="bi bi-0-circle"></i></span><span>item-08</span></a></li>
-                <li class="nav-list--item"><a class="nav-list--item_link" href="#"><span class="icon"><i
-                                class="bi bi-0-circle"></i></span><span>item-09</span></a></li>
-                <li class="nav-list--item active">
-                    <a class="nav-list--item_link" href="#">
-                        <span class="icon"><i class="bi bi-0-circle"></i></span><span>item-10</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <button class="aside--add">
-            <span class="icon"><i class="bi bi-plus-circle"></i></span>&nbsp;<span>Add another list</span>
-        </button>
-    </aside>
-
-    <main class="main--container">
-
-        <div class="main--search search">
-            <input type="text" placeholder="Search">
-            <span class="icon"><i class="bi bi-search"></i></span>
-        </div>
-
-        <section class="main--content">
-
-            <article class="main--article">
-
-                <div class="main--article_front">
-                    <header class="main--article_header">
-                        <h4 class="mr-auto">Item</h4>
-                        <button class="done">
-                            <i class="bi bi-app"></i>
-                        </button>
-                        <button class="toggle">
-                            <i class="bi bi-pen"></i>
-                        </button>
-                    </header>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div class="main--article_back">
-                    <header class="main--article_header">
-                        <h4 class="mr-auto">Edit</h4>
-                        <button class="toggle close">
-                            <i class="bi bi-x-square"></i>
-                        </button>
-                    </header>
-                    <form action="">
-                        <div class="mb-4">
-                            <input name="title" placeholder="Title" />
-                        </div>
-                        <div class="mb-4">
-                            <textarea name="content" placeholder="Content"></textarea>
-                        </div>
-                        <div class="mb-4">
-                            <button class="trash">
-                                <i class="bi bi-trash"></i> Delete
+        </aside>
+    
+        <main class="main--container">
+    
+            <div class="main--search search">
+                <input type="text" placeholder="Search">
+                <span class="icon"><i class="bi bi-search"></i></span>
+            </div>
+    
+            <section class="main--content">
+    
+                <article class="main--article">
+    
+                    <div class="main--article_front">
+                        <header class="main--article_header">
+                            <h4 class="mr-auto">Item</h4>
+                            <button class="done">
+                                <i class="bi bi-app"></i>
                             </button>
-                        </div>
-                    </form>
-                </div>
-
-            </article>
-
-            <article class="main--article main--article-done">
-
-                <div class="main--article_front">
-                    <header class="main--article_header">
-                        <h4 class="mr-auto">Item</h4>
-                        <button class="done">
-                            <i class="bi bi-check-square"></i>
-                        </button>
-                        <button class="toggle">
-                            <i class="bi bi-pen"></i>
-                        </button>
-                    </header>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div class="main--article_back">
-                    <header class="main--article_header">
-                        <h4 class="mr-auto">Edit</h4>
-                        <button class="toggle close">
-                            <i class="bi bi-x-square"></i>
-                        </button>
-                    </header>
-                    <form action="">
-                        <div class="mb-4">
-                            <input name="title" placeholder="Title" />
-                        </div>
-                        <div class="mb-4">
-                            <textarea name="content" placeholder="Content"></textarea>
-                        </div>
-                        <div class="mb-4">
-                            <button class="trash">
-                                <i class="bi bi-trash"></i> Delete
+                            <button class="toggle">
+                                <i class="bi bi-pen"></i>
                             </button>
-                        </div>
-                    </form>
-                </div>
-
-            </article>
-
-            <article class="main--article main--article-create">
-
-                <div class="main--article_front">
-                    <button class="toggle create text-4xl">
-                        <i class="bi bi-plus-circle"></i>
-                    </button>
-                </div>
-
-                <div class="main--article_back">
-                    <header class="main--article_header">
-                        <h4>Create</h4>
-                    </header>
-                    <form action="">
-                        <div class="mb-4">
-                            <input name="title" placeholder="Title" />
-                        </div>
-                        <div class="mb-4">
-                            <textarea name="content" placeholder="Content"></textarea>
-                        </div>
-                        <div class="mb-4 flex justify-between">
-                            <button type="button" class="toggle close">
-                                <i class="bi bi-x-square"></i> Cancel
+                        </header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+    
+                    <div class="main--article_back">
+                        <header class="main--article_header">
+                            <h4 class="mr-auto">Edit</h4>
+                            <button class="toggle close">
+                                <i class="bi bi-x-square"></i>
                             </button>
-                            <button type="button" class="toggle create">
-                                <i class="bi bi-plus-circle"></i> Save
+                        </header>
+                        <form action="">
+                            <div class="mb-4">
+                                <input name="title" placeholder="Title" />
+                            </div>
+                            <div class="mb-4">
+                                <textarea name="content" placeholder="Content"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <button class="trash">
+                                    <i class="bi bi-trash"></i> Delete
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+    
+                </article>
+    
+                <article class="main--article main--article-done">
+    
+                    <div class="main--article_front">
+                        <header class="main--article_header">
+                            <h4 class="mr-auto">Item</h4>
+                            <button class="done">
+                                <i class="bi bi-check-square"></i>
                             </button>
-                        </div>
-                    </form>
-                </div>
-
-            </article>
-
-        </section>
-
-    </main>
+                            <button class="toggle">
+                                <i class="bi bi-pen"></i>
+                            </button>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+    
+                    <div class="main--article_back">
+                        <header class="main--article_header">
+                            <h4 class="mr-auto">Edit</h4>
+                            <button class="toggle close">
+                                <i class="bi bi-x-square"></i>
+                            </button>
+                        </header>
+                        <form action="">
+                            <div class="mb-4">
+                                <input name="title" placeholder="Title" />
+                            </div>
+                            <div class="mb-4">
+                                <textarea name="content" placeholder="Content"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <button class="trash">
+                                    <i class="bi bi-trash"></i> Delete
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+    
+                </article>
+    
+                <article class="main--article main--article-create">
+    
+                    <div class="main--article_front">
+                        <button class="toggle create text-4xl">
+                            <i class="bi bi-plus-circle"></i>
+                        </button>
+                    </div>
+    
+                    <div class="main--article_back">
+                        <header class="main--article_header">
+                            <h4>Create</h4>
+                        </header>
+                        <form action="">
+                            <div class="mb-4">
+                                <input name="title" placeholder="Title" />
+                            </div>
+                            <div class="mb-4">
+                                <textarea name="content" placeholder="Content"></textarea>
+                            </div>
+                            <div class="mb-4 flex justify-between">
+                                <button type="button" class="toggle close">
+                                    <i class="bi bi-x-square"></i> Cancel
+                                </button>
+                                <button type="button" class="toggle create">
+                                    <i class="bi bi-plus-circle"></i> Save
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+    
+                </article>
+    
+            </section>
+    
+        </main>
+    </div>
 
     <script>
         const toggleSidebar = document.querySelector('[data-toggle-sidebar]')

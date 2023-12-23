@@ -15,11 +15,14 @@ body {
     --_grid-row-main: 2;
 
     @apply h-screen dark:text-gray-400 text-slate-700;
+}
 
+#app {
     display: grid;
     grid-template-columns: var(--_grid-col-ly);
     grid-template-rows: var(--_grid-row-ly);
     overflow: hidden;
+    height: 100vh;
 }
 
 header.header--container {
@@ -42,6 +45,10 @@ header.header--container {
     .header--toggle-aside {
         @apply ml-2 md:hidden;
     }
+
+    .header--list-name {
+        @apply mx-auto;
+    }
 }
 
 aside.aside--container {
@@ -54,6 +61,7 @@ aside.aside--container {
     .search {
         @apply m-2.5;
     }
+
     .nav-list {
         @apply mx-2.5;
     }
@@ -85,7 +93,7 @@ aside.aside--container {
 }
 
 .aside--add {
-    @apply p-2.5 bg-blue-900 text-white mt-auto;    
+    @apply p-2.5 bg-blue-900 text-white mt-auto;
 }
 
 main.main--container {
@@ -106,10 +114,10 @@ main.main--container {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
-.main--article {            
+.main--article {
     position: relative;
-    transform-style: preserve-3d;        
-    transition: all 1s;    
+    transform-style: preserve-3d;
+    transition: all 1s;
 }
 
 .main--article_front,
@@ -118,15 +126,15 @@ main.main--container {
     height: 280px;
 }
 
-.main--article .main--article_front {    
-    backface-visibility: visible;  
+.main--article .main--article_front {
+    backface-visibility: visible;
     position: absolute;
     inset: 0;
 }
 
 .main--article .main--article_back {
     @apply bg-white dark:bg-slate-900;
-    backface-visibility: hidden;    
+    backface-visibility: hidden;
     transform: rotateY(180deg);
 }
 
@@ -146,7 +154,7 @@ main.main--container {
 .main--article-done .main--article_front,
 .main--article-done .main--article_back {
     text-decoration: line-through;
-    background-image: repeating-linear-gradient(135deg, transparent, transparent 10px,  rgba(0,0,0,.1) 10px, rgba(0,0,0,.1) 20px);
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 10px, rgba(0, 0, 0, .1) 10px, rgba(0, 0, 0, .1) 20px);
 }
 
 .main--article.focus {
